@@ -1,0 +1,53 @@
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 1240px;
+  min-width: 335px;
+  max-height: 415px;
+  min-height: 255px;
+  overflow: hidden;
+  display: flex;
+  border-radius: 25px;
+  justify-self: center;
+  align-items: center;
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__prev,
+  &__next {
+    position: absolute;
+    align-items: center;
+    cursor: pointer;
+    background: none;
+    border: none;
+
+    img{
+      @media (max-width: 500px) {
+      width:24px;
+      height:auto;
+    }
+    }
+  }
+  &__prev {
+    left: 20px;
+  }
+  &__next {
+    right: 20px;
+  }
+
+  &__counter {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    color: white;
+    font-size: 18px;
+
+    @media (max-width: 500px) {
+      display: none;
+    }
+  }
+}

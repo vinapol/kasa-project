@@ -1,0 +1,22 @@
+@use "./variable.scss" as v ;
+
+.rating {
+  display: flex;
+  gap: 12px;
+
+  .star {
+    font-size: 24px;
+
+    &.filled {
+      color: v.$color-primary;
+    }
+
+    &.empty {
+      color: #E3E3E3;
+    }
+
+    @media (max-width:500px) {
+    font-size: 18px;
+  }
+  }
+}

@@ -1,0 +1,26 @@
+@use "./variable.scss" as v;
+
+.label-badge {
+  height: 25px;
+  padding-left: 8px;
+  padding-right: 8px;
+  background-color: v.$color-primary;
+  margin-bottom: 40px;
+  text-align: center;
+  color: #ffff;
+  font-size: 14px;
+  border-radius: 16px;
+
+  p {
+    margin: 3px;
+  }
+
+  @media (max-width: 900px) {
+    margin-top: 1%;
+    margin-bottom: 1%;
+  }
+
+  @media (max-width: 500px) {
+    height: 18px;
+  }
+}

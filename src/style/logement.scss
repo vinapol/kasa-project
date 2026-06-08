@@ -1,0 +1,98 @@
+@use "./variable.scss" as v;
+
+.property-details {
+  width: 100%;
+  max-width: 1240px;
+  min-width: 355px;
+  justify-self: center;
+  margin: 5%;
+
+  .info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .property-info {
+      font-family: v.$font-main;
+      h1 {
+        font-size: 36px;
+        font-weight: 500;
+        margin-bottom: 0px;
+        color: v.$color-primary;
+
+        @media (max-width: 500px) {
+          font-size: 18px;
+        }
+      }
+      .logement-location {
+        margin-top: 0px;
+        font-size: 18px;
+
+        @media (max-width: 500px) {
+          font-size: 14px;
+        }
+      }
+
+      .label-list {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        height: auto;
+
+        p {
+          font-size: 18px;
+          @media (max-width: 500px) {
+            font-size: 10px;
+          }
+        }
+      }
+    }
+    .host-rating {
+      display: flex;
+      flex-direction: column;
+      margin-top: 25px;
+      align-items: center;
+      gap: 15px;
+
+      @media (max-width: 900px) {
+        width: 100%;
+        margin: 1%;
+        margin-bottom: 3%;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+      }
+    }
+  }
+  .property-collapses {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5%;
+    max-width: 1240px;
+    min-width: 355px;
+
+    .collapse {
+      max-width: 582px;
+      min-width: 335px;
+
+      .collapse__content {
+        font-family: v.$font-main;
+        font-size: 18px;
+        ul {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+
+          li {
+            margin-bottom: 5px;
+          }
+        }
+
+        @media (max-width: 500px) {
+        font-size: 14px;
+      }
+      }
+    }
+  }
+}

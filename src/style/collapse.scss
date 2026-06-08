@@ -1,0 +1,47 @@
+@use "./variable.scss" as v;
+
+.collapse {
+  width: auto;
+  flex: 1 1 0%;
+  margin-bottom: 20px;
+
+  &__header {
+    background-color: v.$color-primary;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    height: 52px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: v.$font-main;
+    font-size: 24px;
+    cursor: pointer;
+
+    img {
+      transition: transform 0.3s ease;
+    }
+
+    .rotate {
+      transform: rotate(180deg);
+    }
+
+    @media (max-width:500px) {
+      font-size: 14px;
+      height: 30px;
+    }
+  }
+
+  &__content {
+    background-color: #f6f6f6;
+    line-height: 143%;
+    padding: 20px;
+    border-radius: v.$border-radius;
+    font-family: v.$font-main;
+    font-size: 18px;
+
+    @media (max-width: 500px) {
+        font-size: 14px;
+      }
+  }
+}
