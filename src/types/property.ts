@@ -10,6 +10,6 @@ export interface Property {
   };
   rating: string;
   location: string;
-  equipments: string[]; // C'est cette ligne qui est cruciale
+  equipments: string[]; 
   tags: string[];
 }

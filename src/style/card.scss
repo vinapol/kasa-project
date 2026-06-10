@@ -9,6 +9,7 @@
   overflow: hidden;
   text-decoration: none;
   transition: transform 0.2s ease-in-out;
+  background-color: v.$color-primary;
 
   &:hover {
     transform: scale(1.02); 
