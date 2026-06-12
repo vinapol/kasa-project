@@ -6,7 +6,8 @@ export const useLogements = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    fetch('http://localhost:5173/logements.json')
+    fetch('http://localhost:8080/api/properties')
+    //fetch('http://localhost:5173/logements.json') - à utiliser si on ne veux pas du Docker
       .then((res) => res.json())
       .then((data: Property[]) => {
         setData(data);
